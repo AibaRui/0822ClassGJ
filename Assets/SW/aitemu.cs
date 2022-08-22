@@ -22,6 +22,7 @@ public class aitemu : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             Instantiate(_player, transform.position, _player.transform.rotation);
+            Instantiate(_player, transform.position, _player.transform.rotation);
             Destroy(this.gameObject);
         }
     }
