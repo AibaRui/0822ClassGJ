@@ -4,6 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameObject _player;
+    [SerializeField] GameObject _stage;
+
     [SerializeField, Tooltip("éûä‘êßå¿")]
     Text _timer;
     [SerializeField, Tooltip("ÉXÉRÉA")]
@@ -43,6 +46,9 @@ public class GameManager : MonoBehaviour
             {
                 __BattleGameOver.SetActive(true);
             }
+
+            _stage.SetActive(false);
+          //  _player.SetActive(false);
         }
     }
 

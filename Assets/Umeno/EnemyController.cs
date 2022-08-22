@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     //GameManagerスクリプトがついているオブジェクトをアタッチ
-    //[SerializeField] GameManager _gameManager;
+
     [SerializeField] int _intarval;
     [SerializeField] int _score;
     float _timer;
@@ -13,7 +13,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         //GameManagerがある場合動作するはず
-        //_gameManager = GetComponent<GameManager>();
+
     }
 
     // Update is called once per frame
@@ -26,18 +26,19 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    //GameManagerがアタッチされてら使える
-    //private void OnCollisionEnter2D(Collision2D collision)
-    //{
-    //    if(collision.gameObject.tag == "Player")
-    //    {
-    //        StartCoroutine(AddScore(_score));
-    //    }
-    //}
-    //IEnumerator AddScore(int Score)
-    //{
-    //    _gameManager.AddScore(Score);
-    //    yield return new WaitForSeconds(0.1f);
-    //    Destroy(gameObject);
-    //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            StartCoroutine(AddScore(_score));
+        }
+    }
+    IEnumerator AddScore(int Score)
+    {
+        GameManager _gameManager = GameObject.FindObjectOfType<GameManager>();
+        _gameManager.AddScore(Score);
+        yield return new WaitForSeconds(0.1f);
+        Destroy(gameObject);
+    }
 }
