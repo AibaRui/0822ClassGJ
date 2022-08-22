@@ -491,6 +491,7 @@ MonoBehaviour:
   _inCooperation: 1
   _inBattle: 1
   Rank: {fileID: 8461978565821190462}
+  G: {fileID: 8461978567427792601}
 --- !u!1 &8461978566258567730
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,7 +2174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8461978567574494386
 RectTransform:
   m_ObjectHideFlags: 0

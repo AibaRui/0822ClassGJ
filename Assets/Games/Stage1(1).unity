@@ -514,6 +514,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8461978566094703168, guid: 5fa24ab8202cb744197a11beca6913bc, type: 3}
+      propertyPath: _Time
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8461978566094703168, guid: 5fa24ab8202cb744197a11beca6913bc, type: 3}
       propertyPath: _stage
       value: 
       objectReference: {fileID: 865057871}
