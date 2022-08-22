@@ -25,6 +25,8 @@ public class GameManager : MonoBehaviour
     bool _inBattle;
     [SerializeField]
     Text Rank;
+    [SerializeField]
+    Text G;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,22 +58,27 @@ public class GameManager : MonoBehaviour
         if(Score == 0)
         {
             Rank.text = "D";
+            G.text = "Player2Win";
         }
         else if (Score < 1000)
         {
             Rank.text = "C";
+            G.text = "Player2Win";
         }
         else if (Score < 3000)
         {
             Rank.text = "B";
+            Rank.text = "Draw";
         }
         else if (Score < 5000)
         {
             Rank.text = "A";
+            G.text = "Player1Win";
         }
         else if (Score < 10000)
         {
             Rank.text = "S";
+            G.text = "Player1Win";
         }
     }
 
