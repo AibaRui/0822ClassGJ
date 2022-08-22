@@ -154,7 +154,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8461978565821190463
 RectTransform:
   m_ObjectHideFlags: 0
@@ -390,7 +390,7 @@ MonoBehaviour:
   _ResultScore: {fileID: 8461978566464136148}
   __CooperationGameOver: {fileID: 8461978566452194758}
   __BattleGameOver: {fileID: 8461978567574494390}
-  _Time: 5
+  _Time: 60
   _inCooperation: 1
   _inBattle: 1
 --- !u!1 &8461978566258567730
@@ -511,7 +511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -186.73, y: -151}
+  m_AnchoredPosition: {x: -12.62, y: -151}
   m_SizeDelta: {x: 107.8, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8461978566320683440
@@ -838,7 +838,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -304.2, y: 73}
+  m_AnchoredPosition: {x: -227.1, y: 38.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8461978566464136147
@@ -921,7 +921,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -283, y: -174}
+  m_AnchoredPosition: {x: -7.7, y: -174}
   m_SizeDelta: {x: 97.1, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8461978566482156489
@@ -1147,7 +1147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -162.76, y: 227.9}
+  m_AnchoredPosition: {x: -162.76, y: 207.83}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8461978566643858053
@@ -1605,7 +1605,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8461978567236932285
 RectTransform:
   m_ObjectHideFlags: 0
