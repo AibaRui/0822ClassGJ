@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     bool _inCooperation;
     [SerializeField,Tooltip("ƒoƒgƒ‹")]
     bool _inBattle;
+    [SerializeField]
+    Text Rank;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +51,27 @@ public class GameManager : MonoBehaviour
 
             _stage.SetActive(false);
           //  _player.SetActive(false);
+        }
+
+        if(Score == 0)
+        {
+            Rank.text = "D";
+        }
+        else if (Score < 1000)
+        {
+            Rank.text = "C";
+        }
+        else if (Score < 3000)
+        {
+            Rank.text = "B";
+        }
+        else if (Score < 5000)
+        {
+            Rank.text = "A";
+        }
+        else if (Score < 10000)
+        {
+            Rank.text = "S";
         }
     }
 
