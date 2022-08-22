@@ -11,6 +11,7 @@ public class BallControl : MonoBehaviour
     void Start()
     {
         _rb = gameObject.GetComponent<Rigidbody2D>();
+        _rb.AddForce(transform.up * 5, ForceMode2D.Impulse);
     }
 
     // Update is called once per frame
