@@ -11,9 +11,15 @@ public class GameManager : MonoBehaviour
     [SerializeField, Tooltip("リザルトスコア")]
     Text _ResultScore;
     [SerializeField, Tooltip("リザルト画面")]
-    GameObject _GameOver;
+    GameObject __CooperationGameOver;
+    [SerializeField, Tooltip("リザルト画面")]
+    GameObject __BattleGameOver;
     public float _Time;
     private int Score;
+    [SerializeField,Tooltip("協力")]
+    bool _inCooperation;
+    [SerializeField,Tooltip("バトル")]
+    bool _inBattle;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +35,17 @@ public class GameManager : MonoBehaviour
 
         if (_Time < 0)
         {
-            _GameOver.SetActive(true);
+            if (_inCooperation == true)
+            {
+                __CooperationGameOver.SetActive(true);
+            }
+            else if (_inBattle == true)
+            {
+                __BattleGameOver.SetActive(true);
+            }
         }
     }
+
     private void SetScoreText(int Score)
     {
         _score.text = "Score: " + Score.ToString();
