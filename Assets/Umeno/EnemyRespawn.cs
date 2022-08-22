@@ -7,6 +7,7 @@ public class EnemyRespawn : MonoBehaviour
     [SerializeField] Transform[] _respawnPosition;
     [SerializeField] GameObject _target;
     [SerializeField] int _intarval;
+    [SerializeField] GameObject _stage;
     public int Intarval { get => _intarval; }
     float _timer;
 
@@ -23,7 +24,8 @@ public class EnemyRespawn : MonoBehaviour
         _timer += Time.deltaTime;
         if(_timer >= _intarval)
         {
-            Instantiate(_target, _respawnPosition[n].position, transform.rotation);
+          var go =  Instantiate(_target, _respawnPosition[n].position, transform.rotation);
+            go.transform.SetParent(_stage.transform);
             _timer = 0;
         }
     }
